@@ -7,15 +7,13 @@ import { Quote } from '../quote'
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-quotes=[];
-
-addQuote(username:HTMLInputElement, Quote:HTMLInputElement, author:HTMLInputElement):boolean{
+  addQuote(Username:HTMLInputElement, Quote:HTMLInputElement, author:HTMLInputElement):boolean{
+    let usedname=alert(`${Username.value}`);
 
 return false;
 }
-   console.log(`${Quote.value}`); 
 
-   ngOnInit(){
-
+  ngOnInit(){
 }
 
+}
